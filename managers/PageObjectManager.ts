@@ -3,9 +3,12 @@ import { LoginPage } from '../pages/LoginPage';
 import { PimPage } from '../pages/PimPage';
 
 export class PageObjectManager {
-    constructor(private page: Page) {}
+    readonly loginPage: LoginPage;
+    readonly pimPage: PimPage;
 
-    readonly loginPage = new LoginPage(this.page);
-    readonly pimPage = new PimPage(this.page);
+    constructor(private page: Page) {
+        this.loginPage = new LoginPage(this.page);
+        this.pimPage = new PimPage(this.page);
+    }
     
 } 
