@@ -1,5 +1,5 @@
 import { test as base, expect } from '@playwright/test';
-import { PageObjectManager } from '../managers/pageobjectmanager';
+import { PageObjectManager } from '../managers/PageObjectManager';
 
 
 type MyFixtures = {

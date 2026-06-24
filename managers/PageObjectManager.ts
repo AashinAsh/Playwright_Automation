@@ -8,7 +8,7 @@ export class PageObjectManager {
 
     constructor(private page: Page) {
         this.loginPage = new LoginPage(this.page);
-        this.pimPage = new PimPage(this.page);
+        this.pimPage = new PimPage();
     }
     
 } 
